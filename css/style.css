@@ -1,7 +1,69 @@
 body {
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 
 h1 {
   font-family: 'Shrikhand', cursive;
 }
+
+section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  background: #353535;
+  color: white;
+}
+
+.info button{
+  background: #ff79da;
+}
+
+.cardTuto{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #f6f6f6;
+  margin: 10px 0;
+}
+
+.listRestaurant{
+  align-items: flex-start;
+  width: 90%;
+  background: #f6f6f6;
+}
+
+.cardResto{
+  width: 80%;
+  height: 250px;
+  border: solid 1px black;
+}
+
+.photo{
+  object-fit: contain;
+}
+
+.listFooter{
+  list-style-type: none ;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.listFooter li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
