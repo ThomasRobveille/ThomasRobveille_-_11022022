@@ -17,16 +17,38 @@ section{
   align-items: center;
 }
 
+a{
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
 footer {
   width: 100%;
   background: #353535;
   color: white;
 }
 
-.info button{
-  background: #ff79da;
+/* section info*/
+.info{
+  background: rgb(161, 158, 158);
 }
 
+.info span{
+  width: 100%;
+  background: rgb(126, 122, 122);
+}
+
+.info button{
+  background: linear-gradient(#ff79da, #9356dc);
+  width: 60%;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+}
+
+/* section tuto */
 .cardTuto{
   width: 90%;
   display: flex;
@@ -35,8 +57,27 @@ footer {
   align-items: center;
   background: #f6f6f6;
   margin: 10px 0;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px black;
 }
 
+.cardTuto span{
+  background:#9356dc ;
+  color: white;
+  width: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -30px;
+}
+
+.cardTuto:hover{
+  background: #bfa3e0;
+}
+
+/* section listRestaurant */
 .listRestaurant{
   align-items: flex-start;
   width: 90%;
@@ -45,12 +86,35 @@ footer {
 
 .cardResto{
   width: 80%;
-  height: 250px;
   border: solid 1px black;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.float{
+  float: right;
+  position: relative;
+  top: 30px;
+  left: -30px;
+  background: rgb(66, 216, 129);
+  color: green;
+  margin: -20px;
 }
 
 .photo{
-  object-fit: contain;
+  width: 100%;
+}
+
+.cardResto_info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.cardResto_info button{
+  background: none;
+  border: none;
 }
 
 .listFooter{
