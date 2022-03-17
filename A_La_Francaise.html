@@ -13,96 +13,157 @@
 </head>
 <body>
   <header>
-    <nav><button>back</button></nav>
+    <nav><a href="Home.html"><i class="fa-solid fa-arrow-left-long"></i></a></nav>
     <a href="Home.html"><h1>Ohmyfood</h1></a>
   </header>
+
+  <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photoRestaurant" class="photo">
   <section>
-    <div>
-      <h1>A la française</h1>
-      <button><i class="fa-light fa-heart"></i></button>
+    <div class="headerCard">
+      <h2>À la française</h2>
+      <div class="heart">
+        <input type="checkbox" class="heart__checkbox">
+        <div class="heart__icon"></div>
+      </div> 
     </div>
-    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-    <div class="entree">
-      <h2>Entrées</h2>
-      <ul>
+    <div class="containerListPlat anim1 entree">
+      <h3>Entrées</h3>
+      <ul class="ListPlat">
         <li class="cartePlat">
+          <label for="check1">
           <div>
-            <h3>Tartare de poulpe accidulé</h3>
-            <h4>Aux zeste d'orange</h4>
-          </div>
-          <span>25€</span>      
+            <h4>Tartare de poulpe accidulé</h4>
+            <h5>Aux zeste d'orange</h5>
+          </div>          
+          <div class="input">
+            <input type="checkbox" id="check1" class="check"/>
+            <span class="prix">25€</span> 
+            <div class="checkmark"><i class="fa-solid fa-circle-check white"></i></div>
+          </div> 
+        </label>  
         </li>
         <li class="cartePlat">
-          <div>
-            <h3>Velouté de légumes d'antan</h3>
-            <h4>Carotte, panais, topinambour</h4>
-          </div>
-          <span>35€</span>      
+          <label for="check2">
+            <div>
+              <h4>Velouté de légumes d'antan</h4>
+              <h5>Carotte, panais, topinambour</h5>
+            </div>
+            <div class="input">
+              <input type="checkbox" id="check2" class="check"/>
+              <span class="prix">35€</span> 
+              <div class="checkmark"><i class="fa-solid fa-circle-check white"></i></div>
+            </div>   
+          </label>   
         </li>
         <li class="cartePlat">
-          <div>
-            <h3>Soupe à l'oignon</h3>
-            <h4>Revisitée</h4>
-          </div>
-          <span>20€</span>      
+          <label for="check3">
+            <div>
+              <h4>Soupe à l'oignon</h4>
+              <h5>Revisitée</h5>
+            </div>
+            <div class="input">
+              <input type="checkbox" id="check3" class="check"/>
+              <span class="prix">20€</span> 
+              <div class="checkmark"><i class="fa-solid fa-circle-check white"></i></div>
+            </div> 
+          </label>     
         </li>
       </ul>    
     </div>
-    <div class="plats">
-      <h2>Plats</h2>
-      <ul>
+    <div class="containerListPlat anim2 plats">
+      <h3>Plats</h3>
+      <ul class="ListPlat2">
         <li class="cartePlat">
-          <div>
-            <h3>Coquilles Saint-Jacques</h3>
-            <h4>Acommpagné d'une purée de panais</h4>
-          </div>
-          <span>40€</span>      
+          <label for="check4">
+            <div>
+              <h4>Coquilles Saint-Jacques</h4>
+              <h5>Acommpagné d'une purée de panais</h5>
+            </div>
+            <div class="input">
+              <input type="checkbox" id="check4" class="check"/>
+              <span class="prix">40€</span> 
+              <div class="checkmark"><i class="fa-solid fa-circle-check white"></i></div>
+            </div>
+          </label>     
         </li>
         <li class="cartePlat">
+          <label for="check5">
           <div>
-            <h3>Magret de canard</h3>
-            <h4>Et parmentier de pommes de terres</h4>
+            <h4>Magret de canard</h4>
+            <h5>Et parmentier de pommes de terres</h5>
           </div>
-          <span>35€</span>      
+          <div class="input">
+            <input type="checkbox" id="check5" class="check"/>
+            <span class="prix">35€</span> 
+            <div class="checkmark"><i class="fa-solid fa-circle-check white"></i></div>
+          </div>
+        </label>      
         </li>
         <li class="cartePlat">
-          <div>
-            <h3>Pigeonneau d'Ille-et-Vilaine</h3>
-            <h4>Sur son lit de gnocchis aux légumes</h4>
-          </div>
-          <span>44€</span>      
+          <label for="check6">
+            <div>
+              <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+              <h5>Sur son lit de gnocchis aux légumes</h5>
+            </div>
+            <div class="input">
+              <input type="checkbox" id="check6" class="check"/>
+              <span class="prix">44€</span> 
+              <div class="checkmark"><i class="fa-solid fa-circle-check white"></i></div>
+            </div>
+          </label>     
         </li>
       </ul>    
     </div>
-    <div class="dessert">
-      <h2>Dessert</h2>
-      <ul class="listPlat">
+    <div class="containerListPlat anim3 dessert">
+      <h3>Dessert</h3>
+      <ul class="ListPlat3">
         <li class="cartePlat">
-          <div>
-            <h3>Pétales de violettes glacés</h3>
-            <h4>Et purée de noisettes</h4>
-          </div>
-          <span>18€</span>      
+          <label for="check7">
+            <div>
+              <h4>Pétales de violettes glacés</h4>
+              <h5>Et purée de noisettes</h5>
+            </div>
+            <div class="input">
+              <input type="checkbox" id="check7" class="check"/>
+              <span class="prix">18€</span> 
+              <div class="checkmark"><i class="fa-solid fa-circle-check white"></i></div>
+            </div>
+          </label>     
         </li>
         <li class="cartePlat">
-          <div>
-            <h3>Fondant au chocolat</h3>
-            <h4>Revisitée</h4>
-          </div>
-          <span>22€</span>      
+          <label for="check8">
+            <div>
+              <h4>Fondant au chocolat</h4>
+              <h5>Revisitée</h5>
+            </div>
+            <div class="input">
+              <input type="checkbox" id="check8" class="check"/>
+              <span class="prix">22€</span> 
+              <div class="checkmark"><i class="fa-solid fa-circle-check white"></i></div>
+            </div>
+          </label>      
         </li>
         <li class="cartePlat">
-          <div>
-            <h3>Millefeuille croustillant</h3>
-            <h4>Myrtilles et pâte d'amande</h4>
-          </div>
-          <span>23€</span>      
+          <label for="check9">
+            <div>
+              <h4>Millefeuille croustillant</h4>
+              <h5>Myrtilles et pâte d'amande</h5>
+            </div>
+            <div class="input">
+              <input type="checkbox" id="check9"  class="check"/>
+              <span class="prix">23€</span> 
+              <div class="checkmark"><i class="fa-solid fa-circle-check white"></i></div>
+            </div>
+          </label>      
         </li>
       </ul>    
     </section>
-    <button>Commander</button>
+    <div class="containerButton">
+      <button class="button">Commander</button>
+    </div>
   </div>  
   <footer>
+    <h6>ohmyfood</h6>
     <ul class="listFooter">
       <li><i class="fa-solid fa-utensils"></i></i><h5>Proposer un restaurant</h5></li>
       <li><i class="fa-solid fa-handshake-angle"></i><h5>Devenir partenaire</h5></li>

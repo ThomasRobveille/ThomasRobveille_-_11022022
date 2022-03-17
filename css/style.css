@@ -18,7 +18,6 @@ section{
 }
 
 a{
-  margin: 10px;
   text-decoration: none;
   color: black;
 }
@@ -31,12 +30,19 @@ footer {
 
 /* section info*/
 .info{
-  background: rgb(161, 158, 158);
+  background: #f6f6f6;
 }
 
 .info span{
   width: 100%;
-  background: rgb(126, 122, 122);
+  background: #eaeaea;
+  margin: auto;
+  text-align: center;
+}
+
+.info div{
+  text-align: center;
+  width: 80%;
 }
 
 .info button{
@@ -46,9 +52,32 @@ footer {
   border: none;
   border-radius: 50px;
   color: white;
+  margin: 0 0 20px;
 }
 
 /* section tuto */
+.containerCardTuto{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  
+}
+
+.containerCardTuto span{
+  background:#9356dc ;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 30px;
+  left: 25px;
+}
+
 .cardTuto{
   width: 90%;
   display: flex;
@@ -61,20 +90,8 @@ footer {
   box-shadow: 1px 1px 10px black;
 }
 
-.cardTuto span{
-  background:#9356dc ;
-  color: white;
-  width: 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: -30px;
-}
-
 .cardTuto:hover{
-  background: #bfa3e0;
+  background: #f5edff;
 }
 
 /* section listRestaurant */
@@ -84,11 +101,19 @@ footer {
   background: #f6f6f6;
 }
 
+.containerListResto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .cardResto{
   width: 80%;
-  border: solid 1px black;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 1px 1px 10px black;
+  margin: 10px 0;
 }
 
 .float{
@@ -105,6 +130,11 @@ footer {
   width: 100%;
 }
 
+.big{
+  height: 200px;
+  object-fit: cover;
+}
+
 .cardResto_info{
   display: flex;
   flex-direction: row;
@@ -115,6 +145,144 @@ footer {
 .cardResto_info button{
   background: none;
   border: none;
+}
+
+
+/* checkbox coeur */
+.heart {
+  position: relative;
+  top: 25px;
+  left: -10px;
+  --size: 10px;
+  width: var(--size);
+  height: var(--size);
+  transform: rotate(45deg);
+}
+
+.heart__checkbox {
+  appearance: none;
+  position: absolute;
+  top: calc(var(--size) * -.4);
+  left: calc(var(--size) * -.2);
+  width: calc(var(--size) * 1.5);
+  height: calc(var(--size) * 1.5);
+  z-index: 2;
+  cursor: pointer;  
+}
+    
+.heart__checkbox:focus {
+  outline: none;
+}
+    
+.heart__checkbox:hover ~ .heart__icon {
+  transform:scale(1.1)
+}
+    
+.heart__checkbox:checked ~ .heart__icon {
+  animation: heartAnimation forwards 1s;
+}
+
+.heart__icon {
+  width: var(--size);
+  height: var(--size);
+  background: #ff79da;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 200ms ease-out;
+}
+
+.heart__icon::before,
+.heart__icon::after {
+  content: '';
+  display: block;
+  background: inherit;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
+}
+  
+.heart__icon::before {
+  top: 0;
+  left: -50%;
+}
+  
+.heart__icon::after {
+  left: 0;
+  top: -50%;
+}
+
+@keyframes heartAnimation {
+  0% {
+    transform: scale(1.1);
+  }
+  
+  25% {
+    transform:scale(0.7);
+  }
+  
+  45% {
+    transform: scale(1.4);
+    background: #9356dc;
+  }
+  
+  70% {
+    transform: scale(1.0);
+    background: #9356dc;
+  }
+  
+  100% {
+    transform: scale(1.1);
+    background: #9356dc;
+  }
+}
+
+/* animation loader spin */
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  animation: lds-opacity ease-in 1s;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lds_oppacity{
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%
+  }
 }
 
 .listFooter{

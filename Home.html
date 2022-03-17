@@ -25,68 +25,97 @@
   </section>
   <section class="tuto">
     <h2>Fonctionnement</h2>
-    <div class="cardTuto">
+    <div class="containerCardTuto">
       <span>1</span>
-      <i class="fa-solid fa-mobile-screen-button"></i>
-      <h3>Choisissez un restaurant</h3>
-    </div>
-    <div class="cardTuto">
+      <div class="cardTuto">      
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <h3>Choisissez un restaurant</h3>
+      </div>
+    </div>  
+    <div class="containerCardTuto">
       <span>2</span>
-      <i class="fa-solid fa-list-ul"></i>
-      <h3>Composez votre menu</h3>
-    </div>
-    <div class="cardTuto">
+      <div class="cardTuto"> 
+        <i class="fa-solid fa-list-ul"></i>
+        <h3>Composez votre menu</h3>
+      </div>
+    </div> 
+    <div class="containerCardTuto">
       <span>3</span>
-      <i class="fa-solid fa-store"></i>
-      <h3>Dégustez au restaurant</h3>
-    </div>
+      <div class="cardTuto">
+        <i class="fa-solid fa-store"></i>
+        <h3>Dégustez au restaurant</h3>
+      </div>
+    </div>    
   </section>
+  <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
   <section class="listRestaurant">
     <h2>Restaurants</h2>
-    <a  href="La_Palette_Du_Gout.html" class="cardResto">
-      <div class="float">Nouveau</div>
-      <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photoRestaurant" class="photo">
-      <div class="cardResto_info">
-        <div class="cardResto_text">
-          <h3>La palette du goût</h3>
-          <span>Ménilmontant</span>
-        </div>
-        <button><i class="fa-solid fa-heart"></i></button>
-      </div>      
-    </a>
-    <a href="La_Note_Enchantee.html" class="cardResto">
-      <div class="float">Nouveau</div>
-      <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photoRestaurant" class="photo">
-      <div class="cardResto_info">
-        <div class="cardResto_text">
-          <h3>La note enchantée</h3>
-          <span>Charonne</span>
-        </div>        
-        <button><i class="fa-solid fa-heart"></i></button>
+    <div class="containerListResto">
+      <div class="cardResto">
+        <div class="float">Nouveau</div>
+        <a href="La_Palette_Du_Gout.html">
+          <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photoRestaurant" class="photo">
+        </a>        
+        <div class="cardResto_info">
+          <div class="cardResto_text">
+            <h3>La palette du goût</h3>
+            <span>Ménilmontant</span>
+          </div>
+          <div class="heart">
+            <input type="checkbox" class="heart__checkbox">
+            <div class="heart__icon"></div>
+          </div>
+        </div>      
       </div>
-    </a>
-    <a href="A_La_Francaise.html" class="cardResto">
-      <div class="float">Nouveau</div>
-      <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photoRestaurant" class="photo">
-      <div class="cardResto_info">
-        <div class="cardResto_text">
-          <h3>À la française</h3>
-          <span>Cité Rouge</span>
+      <div class="cardResto">
+        <div class="float">Nouveau</div>
+        <a href="La_Note_Enchantee.html">
+          <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photoRestaurant" class="photo big">
+        </a>
+        <div class="cardResto_info">
+          <div class="cardResto_text">
+            <h3>La note enchantée</h3>
+            <span>Charonne</span>
+          </div>        
+          <div class="heart">
+            <input type="checkbox" class="heart__checkbox">
+            <div class="heart__icon"></div>
+          </div> 
         </div>
-        <button><i class="fa-solid fa-heart"></i></button>
-      </div>      
-    </a>
-    <a href="Le_Delice_Des_Sens.html" class="cardResto">
-      <div class="float">Nouveau</div>
-      <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photoRestaurant" class="photo">
-      <div class="cardResto_info">
-        <div class="cardResto_text">
-          <h3>Le délice des sens</h3>
-          <span>Folie-Méricourt</span>
-        </div>
-        <button><i class="fa-solid fa-heart"></i></button>
-      </div>     
-    </a>
+      </div>
+      <div  class="cardResto">
+        <div class="float">Nouveau</div>
+        <a href="A_La_Francaise.html">
+          <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photoRestaurant" class="photo">
+        </a>        
+        <div class="cardResto_info">
+          <div class="cardResto_text">
+            <h3>À la française</h3>
+            <span>Cité Rouge</span>
+          </div>
+          <div class="heart">
+            <input type="checkbox" class="heart__checkbox">
+            <div class="heart__icon"></div>
+          </div>
+        </div>      
+      </div>
+      <div class="cardResto">
+        <div class="float">Nouveau</div>
+        <a href="Le_Delice_Des_Sens.html">
+          <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photoRestaurant" class="photo">
+        </a>        
+        <div class="cardResto_info">
+          <div class="cardResto_text">
+            <h3>Le délice des sens</h3>
+            <span>Folie-Méricourt</span>
+          </div>
+          <div class="heart">
+            <input type="checkbox" class="heart__checkbox">
+            <div class="heart__icon"></div>
+          </div>
+        </div>     
+      </div>
+    </div>    
   </section>
   <footer>
     <ul class="listFooter">
