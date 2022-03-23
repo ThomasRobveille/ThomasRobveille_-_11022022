@@ -350,6 +350,10 @@ h6{
 
 /* Desktop */
 @media screen and (min-width: 993px) {
+  body{
+    margin: auto
+  }
+  
   header{
     position: relative;
     left: -220px;
