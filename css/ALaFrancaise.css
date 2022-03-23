@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  max-width: 1440px;
   margin: 0;
 }
 
@@ -7,7 +8,17 @@ h1, h2, h6 {
   font-family: 'Shrikhand', cursive;
 }
 
+h3, h4, h5, h6{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
 header{
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -19,11 +30,20 @@ header{
   width: 100%;
  }
 
+ .notePlat{
+   position: relative;
+   top: -250px;
+ }
+
  /* List plats resto*/ 
 section{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    top: -20px;
+    background: white;
 }
 
 .headerCard{
@@ -73,6 +93,7 @@ h6{
 
 footer ul{
   width: 60%;
+  margin: 0 10px;
 }
 
 footer ul li{
@@ -277,11 +298,65 @@ h5{
 }
 
 .cartePlat input:checked ~ .prix{
-  left: -5px;
+  left: -10px;
 }
 
 .check{
   position: absolute;
   left: 0px;
   opacity: 0;
+}
+
+/* Footer */
+.listFooter li{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.listFooter li a {
+  color: white;
+  text-decoration: none;
+}
+
+h6{
+  font-size: 30px;
+  margin: 10px 20px;
+}
+
+.listFooter li span{
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+/* Tablette */
+@media screen and (max-width: 992px) and (min-width:769px) {
+  header{
+    position: relative;
+    left: -25px;
+  }
+
+  .photo{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 993px) {
+  header{
+    position: relative;
+    left: -220px;
+  }
+  .photo{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
 }

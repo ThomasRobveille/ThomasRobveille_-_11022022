@@ -1,4 +1,5 @@
 body {
+  max-width: 1440px;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -6,7 +7,7 @@ body {
   margin: 0;
 }
 
-h1 {
+h1, h5 {
   font-family: 'Shrikhand', cursive;
 }
 
@@ -99,6 +100,21 @@ footer {
   align-items: flex-start;
   width: 90%;
   background: #f6f6f6;
+  animation: listAppear 3s;
+}
+
+@keyframes listAppear {
+  0%{
+    opacity: 0%;
+  }
+
+  90%{
+    opacity: 0%;
+  }
+
+  100%{
+    opacity: 100%
+  }
 }
 
 .containerListResto{
@@ -244,7 +260,7 @@ footer {
   position: relative;
   width: 80px;
   height: 80px;
-  animation: lds-opacity ease-in 1s;
+  animation: lds_opacity 3s forwards;
 }
 .lds-ring div {
   box-sizing: border-box;
@@ -276,12 +292,18 @@ footer {
   }
 }
 
-@keyframes lds_oppacity{
+@keyframes lds_opacity{
   0% {
     opacity: 100%;
   }
+
+  90%{
+    opacity: 100%;
+  }
+
   100% {
-    opacity: 0%
+    opacity: 0%;
+    display: none;
   }
 }
 
@@ -297,5 +319,68 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
 }
 
+.listFooter li a {
+  color: white;
+}
+
+h5{
+  font-size: 30px;
+  margin: 10px 20px;
+}
+
+h6{
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+/* Tablette */
+@media screen and (max-width: 992px) and (min-width:769px) {
+  .containerCardTuto{
+    position: relative;
+    left: -20px;
+  }
+  .containerCardTuto span{
+    left: 62px;
+  }
+
+  .containerListResto{
+    width: 100%;
+  }
+
+  .photo{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 993px) {
+  body{
+    margin: auto
+  }
+
+  .containerCardTuto span{
+    left: 120px;
+  }
+
+  .containerListResto{
+    width: 100%;
+  }
+
+  .cardResto{
+    width: 60%;
+  }
+
+  .photo{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
