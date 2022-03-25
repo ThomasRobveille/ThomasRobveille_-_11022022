@@ -11,6 +11,10 @@ h1, h5 {
   font-family: 'Shrikhand', cursive;
 }
 
+h2{
+  margin: 10px 15px;
+}
+
 section{
   width: 100%;
   display: flex;
@@ -62,7 +66,8 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
-  
+  position: relative;
+  left: -20px;
 }
 
 .containerCardTuto span{
