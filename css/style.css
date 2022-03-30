@@ -43,6 +43,8 @@ footer {
   background: #eaeaea;
   margin: auto;
   text-align: center;
+  box-shadow: 1px 1px 10px inset #979797;
+  cursor: pointer;
 }
 
 .info div{
@@ -58,9 +60,13 @@ footer {
   border-radius: 50px;
   color: white;
   margin: 0 0 20px;
+  box-shadow: 1px 1px 10px #777777;
 }
 
 /* section tuto */
+.tuto{
+  margin: 50px 0;
+}
 .containerCardTuto{
   display: flex;
   flex-direction: row;
@@ -93,11 +99,16 @@ footer {
   background: #f6f6f6;
   margin: 10px 0;
   border-radius: 15px;
-  box-shadow: 1px 1px 10px black;
+  box-shadow: 1px 1px 10px #ababab;
 }
 
 .cardTuto:hover{
   background: #f5edff;
+  box-shadow: 1px 1px 10px rgb(68, 68, 68);
+}
+
+.cardTuto:hover i{
+  color: #9356dc;
 }
 
 /* section listRestaurant */
@@ -105,6 +116,10 @@ footer {
   align-items: flex-start;
   width: 90%;
   background: #f6f6f6;
+  padding: 40px 0;
+}
+
+.listRestaurant, .info, header, .tuto{
   animation: listAppear 3s;
 }
 
@@ -130,7 +145,8 @@ footer {
 }
 
 .cardResto{
-  width: 80%;
+  width: 90%;
+  height: 250px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 1px 1px 10px black;
@@ -141,14 +157,24 @@ footer {
   float: right;
   position: relative;
   top: 30px;
-  left: -30px;
-  background: rgb(66, 216, 129);
-  color: green;
+  left: -35px;
+  background: #99e2d0;
+  color: #008766;
   margin: -20px;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: 600;
 }
 
 .photo{
   width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.photoContainer{
+  height: 70%;
+  overflow: hidden;
 }
 
 .big{
@@ -161,6 +187,8 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+  position: relative;
+  top: -20px;
 }
 
 .cardResto_info button{
@@ -168,12 +196,26 @@ footer {
   border: none;
 }
 
+.cardResto_text {
+  position: relative;
+  top: 7px;
+}
+
+.cardResto_text h3{
+  margin: 15px 0;
+}
+
+.cardResto_text span{
+  position: relative;
+  top: -10px;
+  font-weight: 300;
+}
 
 /* checkbox coeur */
 .heart {
   position: relative;
-  top: 25px;
-  left: -10px;
+  top: 35px;
+  left: -20px;
   --size: 10px;
   width: var(--size);
   height: var(--size);
@@ -206,7 +248,7 @@ footer {
 .heart__icon {
   width: var(--size);
   height: var(--size);
-  background: #ff79da;
+  background: #9c9c9c;
   position: absolute;
   top: 0;
   left: 0;
@@ -265,6 +307,8 @@ footer {
   position: relative;
   width: 80px;
   height: 80px;
+  position: fixed;
+  top: 400px;
   animation: lds_opacity 3s forwards;
 }
 .lds-ring div {
@@ -325,8 +369,8 @@ footer {
   justify-content: space-around;
   align-items: center;
   margin: 10px 0;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
   color: white;
 }
 
@@ -335,12 +379,13 @@ footer {
 }
 
 h5{
-  font-size: 30px;
+  font-size: 18px;
   margin: 10px 20px;
+  padding: 0 15px;
 }
 
 h6{
-  font-size: 20px;
+  font-size: 15px;
   margin: 0 10px;
 }
 
