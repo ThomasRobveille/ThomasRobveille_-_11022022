@@ -107,6 +107,10 @@ footer {
   box-shadow: 1px 1px 10px rgb(68, 68, 68);
 }
 
+.cardTuto i{
+  color: #4a4a4a;
+}
+
 .cardTuto:hover i{
   color: #9356dc;
 }
@@ -149,7 +153,7 @@ footer {
   height: 250px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 1px 1px 10px black;
+  box-shadow: 1px 1px 10px #797878;
   margin: 10px 0;
 }
 

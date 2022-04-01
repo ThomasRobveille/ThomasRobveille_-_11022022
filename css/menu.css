@@ -13,10 +13,11 @@ h3, h4, h5, h6{
 }
 
 h4, h5{
-  width: 200px;
+  width: 220px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: 1s all;
 }
 
 a{
@@ -293,12 +294,20 @@ h5{
 }
 
 .cartePlat input:checked ~ .checkmark{
-  left: 0px;
+  left: 35px;
+}
+
+.cartePlat input:checked ~ div h5{
+  width: 190px;
+}
+
+.cartePlat input:checked ~ div h4{
+  width: 190px;
 }
 
 .prix{
   position: relative;
-  left: 15px;
+  left: 25px;
   transition: all 1s;
 }
 
@@ -308,7 +317,7 @@ h5{
 }
 
 .cartePlat input:checked ~ .prix{
-  left: -10px;
+  left: 15px;
 }
 
 .check{
