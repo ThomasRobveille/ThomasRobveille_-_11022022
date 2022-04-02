@@ -407,6 +407,10 @@ h6{
     object-fit: cover;
   }
 
+  h4, h5{
+    width: 260px;
+  }
+
   .input{
     width: 100%;
     justify-content: space-between;
